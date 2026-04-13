@@ -12,10 +12,27 @@ Deep learning-driven disease segmentation has emerged as a pivotal technology fo
 
 
 ## The overall architecture
-![framework](image/fig1.png)
+![framework](images/fig1.png)
 
 ## Visual results on Camellia oleifera pest and disease dataset
-![framework](image/fig2.png)
+![framework](images/fig2.png)
 
 ## Visual results on AL9EE apple disease dataset
-![framework](image/fig3.png)
+![framework](images/fig3.png)
+
+## Main Environments
+```bash
+conda create -n CCViM python=3. 
+conda activate CCViM
+pip install torch==1.13.0 torchvision==0.14.0 torchaudio==0.13.0 --extra-index-url https://download.pytorch.org/whl/cu117
+pip install packaging
+pip install timm==0.4.12
+pip install pytest chardet yacs termcolor
+pip install submitit tensorboardX
+pip install triton==2.0.0
+pip install causal_conv1d==1.0.0  # causal_conv1d-1.0.0+cu118torch1.13cxx11abiFALSE-cp38-cp38-linux_x86_64.whl
+pip install mamba_ssm==1.0.1  # mmamba_ssm-1.0.1+cu118torch1.13cxx11abiFALSE-cp38-cp38-linux_x86_64.whl
+pip install scikit-learn matplotlib thop h5py SimpleITK scikit-image medpy yacs
+```
+The version of causal_conv1d can be found here. {[causal_conv1d](https://github.com/Dao-AILab/causal-conv1d/releases)} 
+The version of mamba_ssm can be found here. {[mamba_ssm](https://github.com/state-spaces/mamba/releases/)}
