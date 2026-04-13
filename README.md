@@ -1,6 +1,6 @@
 # Segment-Like-A-Pathologist
 
-This repository contains the official PyTorch implementation of the following paper:
+This repository contains the official PyTorch implementation of the following paper（The complete model code and dataset will be made public after the paper is accepted）:
 
 #### Segment Like A Pathologist: Learning reliable diagnostic thinking and experience for Precise Plant Pests and Diseases Segmentation in Complex Environment
 
